@@ -16,5 +16,4 @@ $headers .= "Content-type: text/html\r\n";
 //Send Email
 mail($to, $subject, $message, $headers);
 
-
 ?>
