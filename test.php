@@ -29,6 +29,31 @@ if (obj.developer) {
 } else {
   echo "I am not a developer";  
 }
+
+class foo 
+{
+  function do_foo()
+  {
+    echo "Doing foo.";
+  }
+}
+
+$bar = new foo;
+$bar->do_foo();
+
+class simpleClass
+{
+  //Property Declaration
+  public $var = 'a default value';
+  
+  //method declaration
+  public function displayVar(){
+    echo $this->var;
+  }
+}
+
+$value = new simpleClass;
+$value->displayVar();
   
   
 ?>

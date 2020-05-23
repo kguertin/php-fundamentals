@@ -44,6 +44,11 @@ echo `whoami`."<br / >";
 
 //Create if not exists
   $myfile =  fopen('newfile.txt', 'x') or die ('unable to open file');
+
+//r+ reada nd write pointer at beginning
+//w+ erase content, create if doesnt exist and pointer at beginning of the file
+//a+ read and write, file pointer starts at end of file, creates if doesnt exist\
+//x+ creates file for read and write, returns false if it exists.
   
 
   $myfile = fopen($filename, 'r' ) or die ('unable to open file');
